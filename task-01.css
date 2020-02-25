@@ -1,0 +1,1330 @@
+@font-face {
+  font-family: MuseoSansCyrl;
+  src: url("fonts/museosanscyrl-500.ttf");
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: MuseoSansCyrl;
+  font-size: 18px;
+  margin: 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.headerBlock {
+  display: flex;
+  justify-content: space-between;
+}
+.burgerMenu {
+  display: none;
+}
+.submenu {
+  display:none
+}
+.headerLeftBlock {
+  display: flex;
+  align-items: center;
+}
+.logoName {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: x-large;
+  margin-left: 80px;
+}
+.firstlogoLetter {
+  color: #00ADEE;
+  border-bottom: 3px solid #00ADEE;
+}
+.menu {
+  width: 372px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.decisions {
+  cursor: pointer;
+}
+.decisionsMenu,.decisionsMenu div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start ;
+}
+.decisionsMenu div {
+  margin-left: 20px
+}
+.arrow, .cloneArrow {
+  transform: rotate(90deg);
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.headerRightBlock {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+button, .decisionsPhoneMenu, .submenu {
+  cursor: pointer;
+}
+.buttonTestAccess{
+  width: 193px;
+  height: 46px;
+  font-size: 16px;
+  line-height: 19px;
+  border: none;
+  color: #16ACEA;
+  margin-right: 50px;
+  background: white;
+}
+.buttonEnter{
+  width: 101px;
+  height: 46px;
+  font-size: 17px;
+  line-height: 20px;
+  border: none;
+  background: white;
+  margin-right: 80px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+.mainFirstBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  position: relative;
+  margin-top: 141px;
+  margin-bottom: 400px;
+}
+.picuresLine {
+  background: url(pictures/lines-2.jpg) no-repeat;
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  left: 65%;
+  top: 67%;
+}
+.picturesRobot {
+  background: url(pictures/main2_robot2-2.svg) no-repeat;
+  width: 300px;
+  height: 350px;
+  left: 43%;
+  top: 55%;
+  position: absolute;
+  z-index: 20;
+}
+h1 {
+  font-weight: 500;
+  font-size: 65px;
+  line-height: 72px;
+}
+.reputationScan p {
+  font-weight: 300;
+  line-height: 30px;
+}
+.buttonSampleScan {
+  width: 228px;
+  height: 55px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background: #16ACEA;
+  border-radius: 4px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pseudoElementBox {
+  position: absolute;
+  left: 750px;
+  top: 100px;
+  width: 631px;
+  height: 362px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 30px rgba(159, 164, 196, 0.4);
+  border-radius: 5px;
+}
+.blockTask {
+  width: 634px;
+  height: 380px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 30px rgba(159, 164, 196, 0.4);
+  border-radius: 5px;
+  z-index: 10;
+}
+.coverScan {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 28px;
+  padding-left: 50px;
+}
+.prTask {
+  color: #16ACEA;
+}
+.scanTask{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 38px;
+  padding-left: 73px
+}
+.scanTask li:before,
+.mediaMonitoring li:before, 
+.efficiency  li:before{
+  content: "\2714";
+  color: #16ACEA;
+  padding-right: 4px;
+}
+.scanDay {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.scanDay i {
+  align-self: flex-start;
+  
+}
+.lineChart i {
+  padding-left: 10px;
+}
+.scanDay li {
+  display: flex;
+  flex-direction: column;
+  width: 197px;
+}
+.scanDay h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+}
+.scanDay p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 30px;
+}
+.morning {
+  color: #FDD109;
+}
+.day {
+  color: red;
+}
+.midnight {
+  color: #16ACEA;
+}
+li {
+  list-style: none;
+}
+.pseudoElementDelta {
+  width: 0; 
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid rgb(221, 157, 97);
+  position: absolute;
+  left: 27%;
+  top: 69.4%;
+}
+.scanForPhone {
+  display: flex;
+  justify-content: space-between;
+}  
+.scanForPhone li {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+.interfax {
+  font-weight: bold;
+}
+.tape {
+  background: rgb(221, 157, 97);
+  width: 235px;
+  height: 118px;
+  box-shadow: 10px 10px 40px rgba(159, 164, 196, 0.3);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 10px;
+  margin-left:-28px;
+  padding-left: 15px;
+  padding-top: 10px;;
+}
+.OpportunitiesScan {
+  display: flex;
+  flex-direction: column;
+}
+.OpportunitiesScan h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 66px;
+  text-align: center;
+}
+.mediaMonitoringBlock {
+  display: flex;
+  justify-content: space-around;
+}
+.mediaMonitoringBlock img {
+  width: 390px;
+  height: 525px;
+}
+h3 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+}
+.mediaMonitoring p {
+  font-weight: bold;
+}
+.mediaMonitoring ul {
+  width: 521px;
+  height: 318px;
+}
+.mediaMonitoring li {
+  padding-bottom: 15px;
+}
+.objectSearch, .informationSurge {
+  color: #16ACEA;
+  border-bottom: 1px dotted #16ACEA;
+}
+.publicationsBlock {
+  display: flex;
+  justify-content: space-around;
+}
+.publicationsBlock img {
+  width: 584px;
+  height: 438px;
+}
+.publications {
+  display: flex;
+  flex-direction: column;
+}
+.publications h3 {
+  width: 557px;
+  height: 84px;
+}
+.publications p {
+  width: 524px;
+}
+.reportsBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reportsBlock img {
+  width: 600px;
+  height: 544.5px;
+}
+.reports p{
+  width: 502px;
+  height: 180px;
+}
+.dialogBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.dialogBlock img {
+  width: 541px;
+  height: 500px;
+}
+.dialog h3 {
+  width: 486px;
+  height: 102px;
+}
+.dialog p {
+  width: 502px;
+  height: 150px;
+}
+.efficiencyBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.efficiencyBlock img {
+  width: 606px;
+  height: 515px;
+}
+.efficiency {
+  width: 568px;
+}
+.efficiency p {
+  font-weight: bold;
+}
+.insightsBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.insightsBlock img {
+  width: 603px;
+  height: 500px;
+}
+.insights {
+  width: 502px;
+}
+.problemArea {
+  font-weight: bold;
+}
+.monitoringAgency {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 583px;
+  background: url("pictures/cofeecup-1.png") 50% 55% no-repeat,
+    rgb(202, 239, 255);
+  text-align: center;
+  position: relative;
+}
+.monitoringAgency img {
+  position: absolute;
+  left: 45%;
+  top: -10%;
+}
+.monitoringAgency h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+.buttonOrder {
+  width: 264px;
+  height: 55px;
+  background: #16ACEA;
+  border-radius: 4px;
+  color: white;
+}
+.customersBlock {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  width: 80%;
+  height: 505px;
+  background: rgb(255, 243, 190);
+  margin-top: 76px;
+  margin-bottom: 134px;
+  border-radius: 10px;
+}
+.customers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 502px
+}
+.customers h2 {
+  font-size: 40px;
+  line-height: 48px;
+}
+.customers p {
+  width: 502px;
+}
+.company {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #A5B1B8;
+}
+.company p {
+  font-size: 24px;
+  line-height: 29px;
+}
+.company img {
+  width: 1022px;
+  height: 81px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #E7F6FD;
+  height: 389px;
+}
+.footerInfo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerInfo li {
+  padding-bottom: 10px;
+}
+.license {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.license p {
+  font-size: 14px;
+  line-height: 19px;
+}
+footer i {
+ padding-left: 10px;
+}
+@media (max-width: 1150px) {
+  body {
+    font-size: 16px;
+  }
+  .mainFirstBlock {
+    margin-top: 121px;
+    margin-bottom: 360px;
+  }
+  .picuresLine {
+    background: url(pictures/lines-2.jpg) no-repeat;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 680px;
+    top: 250px;
+  }
+  .picturesRobot {
+    background: url(pictures/main2_robot2-2.svg) no-repeat;
+    width: 280px;
+    height: 330px;
+    left: 425px;
+    top: 229px;
+  }
+  h1 {
+    font-size: 55px;
+    line-height: 62px;
+  }
+  .blockTask {
+    width: 534px;
+    height: 350px;
+  }
+  .pseudoElementBox {
+    left: 500px;
+    top: 70px;
+    width: 531px;
+    height: 352px;
+  }
+  .coverScan {
+    font-size: 24px;
+  }
+  .scanTask{
+    font-weight: 300;
+    font-size: 16px;
+    padding-left: 73px
+  }
+  .scanDay h2 {
+    font-size: 46px;
+  }
+  .scanDay p {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .pseudoElementDelta {
+    left: 28%;
+    top: 74%;
+  }
+  .scanForPhone li {
+    font-size: 15px;
+  }
+  .tape {
+    font-size: 13px;
+    margin-top: 14px;
+  }
+  .OpportunitiesScan h2 {
+    font-size: 53px;
+  }
+  .mediaMonitoringBlock img {
+    width: 370px;
+    height: 505px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  .mediaMonitoring ul {
+    width: 501px;
+    height: 318px;
+  }
+  .publicationsBlock {
+    align-items: center;
+  }
+  .publicationsBlock img {
+    width: 564px;
+    height: 418px;
+  }
+  .publications h3 {
+    width: 527px;
+  }
+  .publications p {
+    width: 504px;
+  }
+  .reportsBlock img {
+    width: 570px;
+    height: 514.5px;
+  }
+  .reports p{
+    width: 450px;
+  }
+  .dialogBlock img {
+    width: 511px;
+    height: 470px;
+  }
+  .dialog h3 {
+    width: 456px;
+    height: 80px;
+    padding-top: 50px;
+  }
+  .dialog p {
+    width: 475px;
+  }
+  .efficiencyBlock img {
+    width: 576px;
+    height: 495px;
+  }
+  .efficiency {
+    width: 470px;
+  }
+  .insightsBlock img {
+    width: 573px;
+    height: 470px;
+  }
+  .insights {
+    width: 460px;
+  }
+  .customersBlock {
+    height: 475px;
+  }
+  .customers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 460px
+  }
+  .customers h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .customers p {
+    width: 450px;
+  }
+  .company p {
+    font-size: 22px;
+  }
+  footer {
+    height: 389px;
+  }
+  .footerInfo li {
+    padding-bottom: 10px;
+    width: 250px;
+  }
+  .license p {
+    font-size: 10px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerLeftBlock {
+    display: flex;
+    align-items: center;
+  }
+  .menu {
+    width: 372px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .headerRightBlock {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    align-items: flex-end;
+  }
+  .buttonTestAccess{
+    font-size: 14px;
+  }
+  .buttonEnter{
+    font-size: 15px;
+    margin: 0;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainFirstBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  .picuresLine {
+    background: url(pictures/lines-2.jpg) no-repeat;
+    width: 250px;
+    height: 250px;
+    left: 257px;
+    top: 560px;
+  }
+  .picturesRobot {
+    background: url(pictures/main2_robot2-2.svg) no-repeat;
+    width: 250px;
+    height: 350px;
+    left: 37px;
+    top: 490px;
+    position: absolute;
+    z-index: 20;
+  }
+  h1 {
+    font-size: 42px;
+    line-height: 44px;
+  }
+  .reputationScan p {
+    line-height: 25px;
+  }
+  .buttonSampleScan {
+    width: 208px;
+    height: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    background: #16ACEA;
+    border-radius: 4px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+  .pseudoElementBox {
+    position: absolute;
+    left: 150px;
+    top: 380px;
+    width: 389px;
+    height: 352px;
+  }
+  .blockTask {
+    width: 390px;
+    height: 360px;
+    background: #FFFFFF;
+    z-index: 10;
+    margin-top: 30px;
+  }
+  .coverScan {
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 50px;
+  }
+  .scanTask{
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 73px
+  }
+  .scanDay {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .scanDay h2 {
+    font-size: 44px;
+    line-height: 52px;
+
+  }
+  .scanDay p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .pseudoElementDelta {
+    left: 25%;
+    top: 73%;
+  }
+  .scanForPhone li {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    width: 150px;
+  }
+  .tape {
+    width: 130px;
+    height: 128px;
+    font-size: 11px;
+    line-height: 18px;
+    margin-top: 25px;
+    margin-left: -51px;
+    padding-left: 15px;
+    padding-top: 16px;;
+  }
+  .OpportunitiesScan {
+    display: flex;
+    flex-direction: column;
+  }
+  .OpportunitiesScan h2 {
+    font-size: 46px;
+    line-height: 62px;
+  }
+  .mediaMonitoringBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .mediaMonitoringBlock img {
+    width: 370px;
+    height: 500px;
+  }
+  h3 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+  .mediaMonitoring ul {
+    width: 521px;
+    height: 230px;
+  }
+  .mediaMonitoring li {
+    padding-bottom: 15px;
+  }
+  .publicationsBlock {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .publicationsBlock img {
+    width: 554px;
+    height: 418px;
+  }
+  .publications {
+    display: flex;
+    flex-direction: column;
+  }
+  .publications h3 {
+    width: 507px;
+    height: 64px;
+  }
+  .publications p {
+    width: 504px;
+  }
+  .reportsBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .reportsBlock img {
+    width: 560px;
+    height: 514.5px;
+  }
+  .reports p{
+    width: 502px;
+    height: 80px;
+  }
+  .dialogBlock {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .dialogBlock img {
+    width: 511px;
+    height: 470px;
+  }
+  .dialog h3 {
+    width: 486px;
+    height: 80px;
+  }
+  .dialog p {
+    width: 502px;
+    height: 90px;
+  }
+  .efficiencyBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .efficiencyBlock img {
+    width: 570px;
+    height: 480px;
+  }
+  .efficiency {
+    width: 518px;
+  }
+  .insightsBlock {
+    flex-direction: column-reverse;
+  }
+  .insightsBlock img {
+    width: 570px;
+    height: 470px;
+  }
+  .insights {
+    width: 502px;
+  }
+  .monitoringAgency {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 583px;
+    background: url("pictures/cofeecup-1.png") 50% 55% no-repeat,
+      rgb(202, 239, 255);
+    text-align: center;
+  }
+  .monitoringAgency h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  .buttonOrder {
+    width: 244px;
+    height: 45px;
+  }
+  .customersBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    background: rgb(250, 227, 124);
+    margin-top: 76px;
+    margin-bottom: 134px;
+    border-radius: 10px;
+  }
+  .customers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+  }
+  .customers h2 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  .customers p {
+    width: auto;
+  }
+  .company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #A5B1B8;
+  }
+  .company p {
+    font-size: 22px;
+    line-height: 29px;
+  }
+  .company img {
+    width: 500px;
+    height: 81px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #E7F6FD;
+    height: auto;
+  }
+  .footerInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footerInfo li {
+    padding-bottom: px;
+  }
+  .license {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .license p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+}
+@media (max-width: 375px) {
+  body {
+    font-size: 18px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .burgerMenu {
+    display: flex;
+    line-height: 8px;
+    position: absolute;
+    left: 88.27%;
+    top: 2.70%;
+    background: white;
+    border: none;
+  }
+  .phoneMenu {
+    margin-bottom: -10px;
+  }
+  .menuList {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 56px;
+  }
+  .submenu {
+    font-weight: normal;
+  }
+  .headerLeftBlock {
+    display: flex;
+    align-items: flex-start;
+  }
+  .menuForPhoneBlock {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    display: none;
+  }
+  .headerRightBlock {
+    display: none;
+  }
+  .buttonTestAccess{
+    width: 193px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+    color: #16ACEA;
+    margin-right: 50px;
+    background: white;
+  }
+  .buttonEnter{
+    width: 101px;
+    height: 46px;
+    font-size: 17px;
+    line-height: 20px;
+    border: none;
+    background: white;
+    margin-right: 80px;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainFirstBlock {
+    justify-content: center;
+    align-items: center;
+  }
+  .picuresLine {
+    background: url(pictures/lines-2.jpg) no-repeat;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 100px;
+    top: 720px;
+    transform: rotate(-40deg);
+  }
+  .picturesRobot {
+    width: 300px;
+    height: 350px;
+    left: 5px;
+    top: 869px;
+  }
+  h1 {
+    font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  margin-left: 45px;
+  }
+  .reputationScan p {
+    height: 72px;
+    margin-left: 45px;
+  }
+  .buttonSampleScan {
+  margin-top: 45px;
+  margin-left: 45px;
+  }
+  .pseudoElementBox {
+    left: -12px;
+    top: 395px;
+    width: 631px;
+    height: 532px;
+  }
+  .blockTask {
+    width: 336px;
+    height: auto;
+    margin-bottom: 235px;
+  }
+  .coverScan {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 28px;
+    padding-left: 50px;
+  }
+  .prTask {
+    color: #16ACEA;
+  }
+  .scanTask{
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 38px;
+    padding-left: 73px
+  }
+  .scanDay {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .scanDay h2 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .scanDay p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .pseudoElementDelta {
+    width: 0; 
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgb(221, 157, 97);
+    position: absolute;
+    top: 55.6%;
+    left: 25%
+  }
+  .scanForPhone {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }  
+  .scanForPhone li {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    width: 260px;
+    height: 72px;
+    padding-bottom: 45px;
+  }
+  .bollPublic {
+    margin-top: 105px;
+  }
+  .tape {
+    background: rgb(221, 157, 97);
+    width: 230px;
+    height: 68px;
+    box-shadow: 10px 10px 40px rgba(159, 164, 196, 0.3);
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 21px;
+    margin-top: 10px;
+    margin-left:-28px;
+    padding-left: 15px;
+    padding-top: 20px;;
+  }
+  .OpportunitiesScan {
+    display: flex;
+    flex-direction: column;
+  }
+  .OpportunitiesScan h2 {
+    font-style: normal;
+    left: 21px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .mediaMonitoringBlock {
+    display: flex;
+    justify-content: space-around;
+  }
+  .mediaMonitoringBlock img {
+    width: 218.4px;
+    height: 294px;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .mediaMonitoring p {
+    font-weight: bold;
+  }
+  .mediaMonitoring ul {
+    width: auto;
+    height: 318px;
+  }
+  .mediaMonitoring li {
+    padding-bottom: 15px;
+  }
+  .publicationsBlock {
+    display: flex;
+    justify-content: space-around;
+  }
+  .publicationsBlock img {
+    width: 375px;
+    height: 281px;
+  }
+  .publications {
+    display: flex;
+    flex-direction: column;
+  }
+  .publications h3 {
+    width: auto;
+    height: 68px;
+  }
+  .publications p {
+    width: 333px;
+  }
+  .reportsBlock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .reportsBlock img {
+    width: 371px;
+    height: 336px;
+  }
+  .reports p{
+    width: 333px;
+    height: 240px;
+  }
+  .dialogBlock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .dialogBlock img {
+    width: 375px;
+    height: 347px;
+  }
+  .dialog h3 {
+    width: 333px;
+    height: auto;
+  }
+  .dialog p {
+    width: 333px;
+    height: 150px;
+  }
+  .efficiencyBlock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .efficiencyBlock img {
+    width: 375px;
+    height: 347px;
+  }
+  .efficiency {
+    width: 333px;
+  }
+  .efficiency p {
+    font-weight: bold;
+  }
+  .insightsBlock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .insightsBlock img {
+    width: 375px;
+    height: 319px;
+  }
+  .insights {
+    width: 333px;
+  }
+  .problemArea {
+    font-weight: bold;
+  }
+  .monitoringAgency {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 659px;
+    background: url("pictures/cofeecup-1.png") 50% 55% no-repeat,
+      rgb(202, 239, 255);
+    text-align: center;
+  }
+  .monitoringAgency h2 {
+    font-size: 26px;
+    line-height: 31px;
+  }
+  .buttonOrder {
+    width: 264px;
+    height: 55px;
+    background: #16ACEA;
+    border-radius: 4px;
+    color: white;
+  }
+  .customersBlock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-self: center;
+    width: 90%;
+    height: auto;
+    margin-top: 76px;
+    margin-bottom: 134px;
+    border-radius: 10px;
+  }
+  .customers {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto
+  }
+  .customers h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .customers p {
+    width: auto;
+  }
+  .company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #A5B1B8;
+  }
+  .company p {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .company img {
+    width: 1022px;
+    height: 81px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background: #E7F6FD;
+    height: auto;
+  }
+  .footerInfo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footerInfo li {
+    padding-bottom: 10px;
+  }
+  .license {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .license p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
